@@ -6,6 +6,7 @@ win = pygame.display.set_mode((800, 480))
 
 pygame.display.set_caption("First Game")
 
+# arrayList
 walkRight = [pygame.image.load('R1.png'), pygame.image.load('R2.png'), pygame.image.load('R3.png'),
              pygame.image.load('R4.png'), pygame.image.load('R5.png'), pygame.image.load('R6.png'),
              pygame.image.load('R7.png'), pygame.image.load('R8.png'), pygame.image.load('R9.png')]
@@ -24,7 +25,8 @@ class player(object):
         self.y = y
         self.width = width
         self.height = height
-        self.vel = 5
+        # for boundary or Velocity
+        self.vel = 10
         self.isJump = False
         self.left = False
         self.right = False
@@ -36,6 +38,7 @@ class player(object):
             self.walkCount = 0
 
         if self.left:
+            # self.walkCount // 3 is for animation AND (self.x, self.y) is for Walking Position
             win.blit(walkLeft[self.walkCount // 3], (self.x, self.y))
             self.walkCount += 1
         elif self.right:
@@ -54,7 +57,7 @@ def redrawGameWindow():
 
 # mainloop
 # man = player(200, 410, 64, 64)
-man = player(200, 310, 64, 64)
+man = player(200, 310, 100, 100)
 run = True
 while run:
     clock.tick(27)

@@ -34,8 +34,8 @@ clock = pygame.time.Clock()
 
 x = 50
 y = 400
-width = 70
-height = 70
+width = 64
+height = 64
 vel = 5
 isJump = False
 jumpCount = 10
