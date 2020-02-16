@@ -1,0 +1,4 @@
+tick
+quit
+get_pressed()
+blit

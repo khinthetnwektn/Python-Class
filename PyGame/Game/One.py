@@ -36,7 +36,7 @@ x = 50
 y = 400
 width = 64
 height = 64
-vel = 5
+vel = 0
 isJump = False
 jumpCount = 10
 left = False
@@ -51,11 +51,11 @@ def redrawGameWindow():
         walkCount = 0
 
     if left:
-        win.blit(walkleft[walkCount // 3], (x, y))
+        win.blit(walkleft[walkCount // 2], (x, y))
         walkCount += 1
 
     elif right:
-        win.blit(walkright[walkCount // 3], (x, y))
+        win.blit(walkright[walkCount // 2], (x, y))
         walkCount += 1
 
     else:
