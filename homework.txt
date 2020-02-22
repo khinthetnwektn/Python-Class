@@ -1,7 +1,7 @@
-tick
-quit
-get_pressed()
-blit
+tick ==> frames per second (frame rate) ==> tick(20) = the most 20 frames per second
+quit ==> to terminate program (Your programs should always call pygame.quit() before they call sys.exit() to terminate the program)
+get_pressed() ==> get the state of all keyboard buttons
+blit ==> object rendering ( make the object visible or copy the object onto the background screen object)
 
 
 UI
