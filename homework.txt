@@ -5,3 +5,5 @@ blit ==> object rendering ( make the object visible or copy the object onto the 
 
 
 UI
+
+- add Blood Bar for player
